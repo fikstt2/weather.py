@@ -1,0 +1,42 @@
+# Weather CLI Tool (Утилита для получения погоды)
+
+Простая консольная утилита на Python, которая показывает текущую температуру и погодные условия в указанном городе, используя OpenWeatherMap API.
+
+## 🚀 Установка
+
+1. Склонируйте репозиторий:
+   ```bash
+   git clone https://github.com/fikstt2/weather.py.git weather
+   cd weather
+   ```
+
+2. Установите необходимые зависимости:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## ⚙️ Настройка
+
+1. Создайте файл `.env` в корневой папке проекта.
+2. Скопируйте содержимое из `.env.example` в `.env`.
+3. Вставьте ваш персональный API ключ от OpenWeatherMap в переменную `OPENWEATHER_API_KEY`.
+   > Получить ключ можно бесплатно на сайте [openweathermap.org](https://openweathermap.org/api).
+
+## 💻 Использование
+
+Запустите скрипт, передав название города в качестве аргумента:
+
+```bash
+python weather.py Москва
+```
+
+Или для городов из нескольких слов:
+```bash
+python weather.py "Saint Petersburg"
+```
+
+## 📁 Структура проекта
+- `weather.py` — основной код программы.
+- `.env.example` — шаблон для настроек.
+- `requirements.txt` — список библиотек (requests, python-dotenv).
+- `.gitignore` — исключение лишних файлов (например, самого `.env` с вашим ключом).
