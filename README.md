@@ -12,14 +12,13 @@
 
 2. Установите необходимые зависимости:
    ```bash
-   pip install -r requirements.txt
+   python -m pip install -r requirements.txt
    ```
 
 ## ⚙️ Настройка
 
-1. Создайте файл `.env` в корневой папке проекта.
-2. Скопируйте содержимое из `.env.example` в `.env`.
-3. Вставьте ваш персональный API ключ от OpenWeatherMap в переменную `OPENWEATHER_API_KEY`.
+1. Зайдите в `.env.example` и переименуйте в `.env`.
+2. Вставьте ваш персональный API ключ от OpenWeatherMap в переменную `OPENWEATHER_API_KEY`.
    > Получить ключ можно бесплатно на сайте [openweathermap.org](https://openweathermap.org/api).
 
 ## 💻 Использование
@@ -39,4 +38,4 @@ python weather.py "Saint Petersburg"
 - `weather.py` — основной код программы.
 - `.env.example` — шаблон для настроек.
 - `requirements.txt` — список библиотек (requests, python-dotenv).
-- `.gitignore` — исключение лишних файлов (например, самого `.env` с вашим ключом).
+- `.gitignore` — исключение лишних файлов (`.env` с вашим ключом и кэш).
