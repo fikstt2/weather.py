@@ -12,7 +12,6 @@ def get_weather(city):
         print("Ошибка: Ключ API не найден. Убедитесь, что он прописан в файле .env")
         return
 
-    # Параметры запроса (версия 2.5)
     base_url = "https://api.openweathermap.org/data/2.5/weather"
     params = {
         "q": city,
@@ -29,7 +28,7 @@ def get_weather(city):
         temp = data["main"]["temp"]
         description = data["weather"][0]["description"]
         
-        print(f"Текущая температура в {city}: {temp}°C, {description}")
+        print(f"Текущая температура в городе {city}: {temp}°C, {description}")
 
     except requests.exceptions.HTTPError as http_err:
         if response.status_code == 404:
