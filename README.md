@@ -38,4 +38,3 @@ python weather.py "Saint Petersburg"
 - `weather.py` — основной код программы.
 - `.env.example` — шаблон для настроек.
 - `requirements.txt` — список библиотек (requests, python-dotenv).
-- `.gitignore` — исключение лишних файлов (`.env` с вашим ключом и кэш).
