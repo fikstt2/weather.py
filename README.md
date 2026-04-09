@@ -4,11 +4,21 @@
 
 ## 🚀 Установка
 
-1. Склонируйте репозиторий:
-   ```bash
-   git clone https://github.com/fikstt2/weather.py.git weather
-   cd weather
-   ```
+Вы можете выбрать подходящую версию проекта в зависимости от ваших задач:
+
+### 1. Стандартная версия (ветка `main`)
+Подходит для простых задач и линейного выполнения.
+```bash
+git clone https://github.com/fikstt2/weather.py.git
+cd weather.py
+```
+
+### 2. Асинхронная версия (ветка `async-weather`)
+Оптимизированная версия на `aiohttp` для высокой производительности.
+```bash
+git clone -b async-weather https://github.com/fikstt2/weather.py.git
+cd weather.py
+```
 
 2. Установите необходимые зависимости:
    ```bash
@@ -37,5 +47,5 @@ python weather.py "Saint Petersburg"
 ## 📁 Структура проекта
 - `weather.py` — основной код программы.
 - `.env.example` — шаблон для настроек.
-- `requirements.txt` — список библиотек (requests, python-dotenv).
+- `requirements.txt` — список библиотек (aiohttp, pydantic, python-dotenv).
 - `.gitignore` — исключение лишних файлов (`.env` с вашим ключом и кэш).
